@@ -1,1 +1,77 @@
-/* Add you CSS here */
+/* style.css - Simple styles for your personal website */
+
+/* Set a dark teal background for the whole page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #17494d; /* Dark teal background */
+  color: #e0f7fa; /* Light teal text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Add some space around each section and use a lighter teal */
+section {
+  max-width: 600px; /* Limit width for readability */
+  margin: 40px auto; /* Center sections on the page */
+  padding: 24px;
+  background: #206a6e; /* Lighter teal for sections */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+/* Center all section headers and use a bright teal */
+h1, h2 {
+  text-align: center; /* This centers the text */
+  color: #1de9b6; /* Bright teal for headers */
+}
+
+/* Style section headings */
+h2 {
+  margin-top: 0;
+}
+
+/* Style the main heading in the hero section */
+#hero h1 {
+  font-size: 2em;
+  margin-bottom: 12px;
+}
+
+/* Style the skills list */
+#skills ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+#skills li {
+  color: #e0f7fa; /* Light teal text for list items */
+}
+
+/* Center the content in the skills section */
+#skills {
+  text-align: center; /* Center all text and skills */
+}
+
+/* Style the skills list container */
+.skills-list {
+  margin-top: 20px; /* Space above the skills */
+}
+
+/* Style each skill as a pill with teal shades */
+.skill-pill {
+  display: inline-block; /* Make the pills line up horizontally */
+  background-color: #26a69a; /* Medium teal for skill pills */
+  color: #e0f7fa; /* Light teal text */
+  padding: 10px 20px; /* Space inside the pill */
+  margin: 8px 6px; /* Space between pills */
+  border-radius: 20px; /* Rounded edges for pill shape */
+  font-size: 1em; /* Make text easy to read */
+  /* No border for a clean look */
+}
+
+/* Style the contact email link */
+#contact a {
+  color: #1de9b6; /* Bright teal for links */
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
