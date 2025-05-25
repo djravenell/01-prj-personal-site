@@ -3,20 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>My Personal Site</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <header>
+    <!-- Simple navigation bar with links to each section -->
+    <nav>
+      <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
+        <li style="display: inline; margin: 0 12px;"><a href="#hero">Home</a></li>
+        <li style="display: inline; margin: 0 12px;"><a href="#bio">About Me</a></li>
+        <li style="display: inline; margin: 0 12px;"><a href="#skills">Skills</a></li>
+        <li style="display: inline; margin: 0 12px;"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <!-- Hero Section -->
   <section id="hero">
     <!-- This is the main introduction area -->
+    <!-- Headshot image below the header, styled as a perfect circle -->
+    <img src="img/headshot.jpg" alt="My headshot" style="width:360px; height:360px; border-radius:50%; display:block; margin: 16px auto;">
     <h1>Welcome to My Personal Website</h1>
     <p>I'm learning web development and this is my portfolio site.</p>
   </section>
 
   <!-- Bio Section -->
   <section id="bio">
-    <!-- Add your headshot image below -->
-    <img src="img/headshot.jpg" alt="My headshot" style="width:120px; border-radius:50%; display:block; margin: 0 auto 16px auto;">
     <!-- A short bio about yourself -->
     <h2>About Me</h2>
     <p>Hello! My name is DJ. I'm a student learning HTML and CSS. I enjoy creating simple and clean websites as I learn new skills.</p>
@@ -28,10 +42,10 @@
     <h2>My Skills</h2>
     <p class="skills-desc">Here are a few of the skills I bring to the table:</p>
     <div class="skills-list">
-      <span class="skill-pill">HTML</span>
-      <span class="skill-pill">CSS</span>
-      <span class="skill-pill">JavaScript (beginner)</span>
-      <span class="skill-pill">Customer Support</span>
+      <span class="skill-pill"><i class="material-icons">code</i> HTML</span>
+      <span class="skill-pill"><i class="material-icons">brush</i> CSS</span>
+      <span class="skill-pill"><i class="material-icons">javascript</i> JavaScript (beginner)</span>
+      <span class="skill-pill"><i class="material-icons">support_agent</i> Customer Support</span>
     </div>
   </section>
 
@@ -39,7 +53,7 @@
   <section id="contact">
     <!-- How people can contact you -->
     <h2>Contact Me</h2>
-    <p>You can reach me at: <a href="mailto:your.email@example.com">devar.rav@gmail.com</a></p>
+    <a href="mailto:devar.rav@gmail.com"><i class="material-icons">mail</i></a>
   </section>
 </body>
 </html>

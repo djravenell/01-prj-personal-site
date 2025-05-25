@@ -1,28 +1,27 @@
 /* style.css - Simple styles for your personal website */
 
-/* Set a dark teal background for the whole page */
+/* Set professional navy background for the whole page */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #17494d; /* Dark teal background */
-  color: #e0f7fa; /* Light teal text for contrast */
+  background-color: #1a2c3b; /* Navy blue background */
+  color: #e8e9eb; /* Light gray text for contrast */
   margin: 0;
   padding: 0;
 }
 
-/* Add some space around each section and use a lighter teal */
+/* Add some space around each section */
 section {
-  max-width: 600px; /* Limit width for readability */
-  margin: 40px auto; /* Center sections on the page */
+  max-width: 100%;
+  margin: 15px auto;
   padding: 24px;
-  background: #206a6e; /* Lighter teal for sections */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Subtle shadow */
+  background: #2d4356; /* Lighter blue for sections */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-/* Center all section headers and use a bright teal */
+/* Center all section headers and use a custom color */
 h1, h2 {
   text-align: center; /* This centers the text */
-  color: #1de9b6; /* Bright teal for headers */
+  color: #e3b04b; /* Gold accent color */
 }
 
 /* Style section headings */
@@ -31,6 +30,10 @@ h2 {
 }
 
 /* Style the main heading in the hero section */
+#hero {
+  background: #142736; /* Darker navy for hero */
+}
+
 #hero h1 {
   font-size: 2em;
   margin-bottom: 12px;
@@ -42,7 +45,7 @@ h2 {
   padding-left: 20px;
 }
 #skills li {
-  color: #e0f7fa; /* Light teal text for list items */
+  color: #e8e9eb; /* Light gray text for list items */
 }
 
 /* Center the content in the skills section */
@@ -58,8 +61,8 @@ h2 {
 /* Style each skill as a pill with teal shades */
 .skill-pill {
   display: inline-block; /* Make the pills line up horizontally */
-  background-color: #26a69a; /* Medium teal for skill pills */
-  color: #e0f7fa; /* Light teal text */
+  background-color: #e3b04b; /* Gold background */
+  color: #1a2c3b; /* Navy text */
   padding: 10px 20px; /* Space inside the pill */
   margin: 8px 6px; /* Space between pills */
   border-radius: 20px; /* Rounded edges for pill shape */
@@ -67,11 +70,64 @@ h2 {
   /* No border for a clean look */
 }
 
+/* Style the Material Icons in skill pills */
+.skill-pill .material-icons {
+  vertical-align: middle; /* Align icon with text */
+  margin-right: 8px; /* More space between larger icon and text */
+  font-size: 1.5em; /* Make icons 50% larger */
+}
+
 /* Style the contact email link */
 #contact a {
-  color: #1de9b6; /* Bright teal for links */
+  color: #f4c668; /* Light gold for links */
   text-decoration: none;
 }
 #contact a:hover {
   text-decoration: underline;
+}
+
+/* Navigation bar styles */
+header {
+  width: 100%;
+  background-color: #142736; /* Darker navy for nav */
+  margin-bottom: 0;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  margin: 0 18px; /* More space between links */
+}
+nav ul li a {
+  color: #e8e9eb; /* Light gray text */
+  text-decoration: none; /* No underline */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  padding: 8px 0;
+  display: inline-block;
+}
+nav ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Set paragraph text color */
+p {
+  color: #e8e9eb; /* Light gray text */
+  text-align: center; /* Center paragraph text */
+  line-height: 1.6; /* Improve readability */
+  font-size: 1.5em; /* Slightly larger text for readability */
+}
+
+#contact {
+  text-align: center; /* Center the icons */
+}
+
+#contact a {
+  display: inline-block;
+  margin: 0 20px; /* Add space between icons */
+  font-size: 2em; /* Make icons larger */
 }
